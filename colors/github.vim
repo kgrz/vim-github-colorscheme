@@ -20,18 +20,18 @@ endif
 let colors_name = "github"
 
 " {{{ General colors
-hi Normal   ctermfg=0   ctermbg=255  guifg=#000000   guibg=#F8F8FF
+hi Normal   ctermfg=0   ctermbg=none  guifg=#000000   guibg=#F8F8FF
 hi Cursor   ctermfg=239   ctermbg=15  guifg=#F8F8FF   guibg=#444454
 hi Visual   ctermfg=15   ctermbg=61  guifg=#FFFFFF   guibg=#3465a3
 hi VisualNOS   ctermfg=15   ctermbg=24  guifg=#FFFFFF   guibg=#204a87
-hi Search   ctermfg=236   ctermbg=228  guifg=#000000   guibg=#FFFF8C  cterm=bold gui=bold
+hi Search   ctermfg=236   ctermbg=228  guifg=#000000   guibg=#FFFF8C  cterm=italic,bold gui=bold
 hi Folded   ctermfg=8 ctermbg=15 guifg=#808080 guibg=#ECECEC gui=bold cterm=bold
 hi Title    ctermfg=167 guifg=#ef5939
 hi StatusLine ctermfg=238 ctermbg=250 guifg=#404040 guibg=#bbbbbb gui=bold cterm=bold
 hi StatusLineNC ctermfg=238 ctermbg=252 guifg=#404040 guibg=#d4d4d4 gui=italic cterm=italic
 hi VertSplit ctermfg=250 ctermbg=250 guifg=#bbbbbb guibg=#bbbbbb gui=none cterm=none
-hi LineNr   ctermfg=246 ctermbg=15 guifg=#959595 guibg=#ECECEC gui=bold cterm=bold
-hi SpecialKey ctermfg=6 guifg=#177F80 gui=italic cterm=italic
+hi LineNr   ctermfg=254 ctermbg=15 guifg=#959595 guibg=#ECECEC gui=bold cterm=bold
+hi SpecialKey ctermfg=1 ctermbg=none guifg=#177F80 gui=italic cterm=italic
 hi WarningMsg ctermfg=167 guifg=#ef5939
 hi ErrorMsg ctermbg=15 ctermfg=196 guibg=#f8f8ff guifg=#ff1100 gui=undercurl cterm=undercurl
 hi ColorColumn ctermbg=254 guibg=#e4e4e4
@@ -39,7 +39,7 @@ hi ColorColumn ctermbg=254 guibg=#e4e4e4
 
 " {{{ Vim => 7.0 specific colors
 if version >= 700
-    hi CursorLine ctermbg=253 guibg=#D8D8DD
+    hi CursorLine ctermbg=none guibg=#D8D8DD
     hi MatchParen ctermfg=0 ctermbg=252 guifg=#000000 guibg=#cdcdfd
     hi Pmenu        ctermfg=15 ctermbg=8 guifg=#ffffff guibg=#808080 gui=bold   cterm=bold
     hi PmenuSel     ctermfg=0 ctermbg=252 guifg=#000000 guibg=#cdcdfd  gui=italic cterm=italic
@@ -59,7 +59,7 @@ hi DiffDelete ctermfg=252 ctermbg=224   guifg=#DDCCCC guibg=#FFDDDD gui=none    
 hi Ignore   ctermfg=8 guifg=#808080
 hi Identifier   ctermfg=31 guifg=#0086B3
 hi PreProc  ctermfg=247 guifg=#A0A0A0 gui=bold cterm=bold
-hi Comment  ctermfg=246 guifg=#999988
+hi Comment  ctermfg=245 ctermbg=255 guifg=#999988 cterm=italic
 hi Constant ctermfg=6 guifg=#177F80 gui=none cterm=none
 hi String   ctermfg=161 guifg=#D81745
 hi Function ctermfg=88 guifg=#990000 gui=bold cterm=bold
@@ -114,3 +114,9 @@ if has("spell")
 endif
 " }}}
 
+" {{{ Customized
+hi cssClassNameDot cterm=italic,bold ctermfg=200 ctermbg=254
+hi cssClassName cterm=italic,bold ctermfg=200 ctermbg=254
+hi sassClassChar cterm=italic,bold ctermfg=200 ctermbg=254
+hi sassClass cterm=italic,bold ctermfg=200 ctermbg=254
+" }}}
