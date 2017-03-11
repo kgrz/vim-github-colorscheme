@@ -30,7 +30,7 @@ hi Title    ctermfg=167 guifg=#ef5939
 hi StatusLine ctermfg=238 ctermbg=250 guifg=#404040 guibg=#bbbbbb gui=bold cterm=bold
 hi StatusLineNC ctermfg=238 ctermbg=252 guifg=#404040 guibg=#d4d4d4 gui=italic cterm=italic
 hi VertSplit ctermfg=250 ctermbg=250 guifg=#bbbbbb guibg=#bbbbbb gui=none cterm=none
-hi LineNr   ctermfg=254 ctermbg=15 guifg=#959595 guibg=#ECECEC gui=bold cterm=bold
+hi LineNr   ctermfg=250 ctermbg=15 guifg=#959595 guibg=#ECECEC gui=none cterm=none
 hi SpecialKey ctermfg=1 ctermbg=none guifg=#177F80 gui=italic cterm=italic
 hi WarningMsg ctermfg=167 guifg=#ef5939
 hi ErrorMsg ctermbg=15 ctermfg=196 guibg=#f8f8ff guifg=#ff1100 gui=undercurl cterm=undercurl
@@ -61,7 +61,7 @@ hi Identifier   ctermfg=31 guifg=#0086B3
 hi PreProc  ctermfg=247 guifg=#A0A0A0 gui=bold cterm=bold
 hi Comment  ctermfg=245 ctermbg=255 guifg=#999988 cterm=italic
 hi Constant ctermfg=6 guifg=#177F80 gui=none cterm=none
-hi String   ctermfg=161 guifg=#D81745
+hi String   ctermfg=161 guifg=#D81745 cterm=italic gui=italic
 hi Function ctermfg=88 guifg=#990000 gui=bold cterm=bold
 hi Statement    ctermfg=0 guifg=#000000 gui=bold cterm=bold
 hi Type     ctermfg=60 guifg=#445588 gui=bold   cterm=bold
@@ -119,4 +119,6 @@ hi cssClassNameDot cterm=italic,bold ctermfg=200 ctermbg=254
 hi cssClassName cterm=italic,bold ctermfg=200 ctermbg=254
 hi sassClassChar cterm=italic,bold ctermfg=200 ctermbg=254
 hi sassClass cterm=italic,bold ctermfg=200 ctermbg=254
+hi SignColumn ctermbg=255
+hi Error cterm=bold
 " }}}
