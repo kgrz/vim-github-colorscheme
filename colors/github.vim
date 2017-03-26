@@ -115,10 +115,14 @@ endif
 " }}}
 
 " {{{ Customized
-hi cssClassNameDot cterm=italic,bold ctermfg=200 ctermbg=254
-hi cssClassName cterm=italic,bold ctermfg=200 ctermbg=254
-hi sassClassChar cterm=italic,bold ctermfg=200 ctermbg=254
-hi sassClass cterm=italic,bold ctermfg=200 ctermbg=254
+hi cssClassName cterm=italic ctermfg=9 ctermbg=255
+hi cssClassNameDot cterm=bold ctermfg=9 ctermbg=255
+
+hi link sassClass cssClassName
+hi link cssIdentifier cssClassName
+hi link cssClassNameDot cssClassName
+hi link sassClassChar cssClassName
+
 hi SignColumn ctermbg=255
 hi Error cterm=bold
 " }}}
